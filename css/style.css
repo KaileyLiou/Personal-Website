@@ -79,28 +79,6 @@ p {
     font-size: 20px;
 }
 
-/* li {
-    display: inline;
-}
-
-li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: 1em;
-}
-
-li a:hover {
-    background-color: #c5e2df;
-}
-
-ul {
-    list-style-type: none;
-    background-color: #3d716c;
-    overflow: hidden;
-    padding: 0.5em;
-} */
-
 nav {
   position: sticky;
   top: 0;
@@ -125,13 +103,13 @@ li.nav-tab a {
   font-size: 17px;
   padding-left: 15px;
   padding-right: 15px;
-  text-decoration: none;
+  text-decoration-style: wavy;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 li.nav-tab a:hover {
-  background-color: #4c6e4c;
+  background-color: #3d716c;
   color: #FAF9F6;
 }
 
