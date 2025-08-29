@@ -85,11 +85,14 @@ nav {
 }
 
 ul.nav-bar {
-  list-style-type: none;
-  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
   background-color: #FAF9F6;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  gap: 15px;
 }
 
 li.nav-tab {
@@ -106,6 +109,7 @@ li.nav-tab a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  display: flex;
 }
 
 li.nav-tab a:hover {
@@ -115,12 +119,16 @@ li.nav-tab a:hover {
 }
 
 .navbar-github {
-    float:right;
+    /* float:right;
     width: 30px;
     margin: 0;
     margin-right: 2%;
     border: 0px;
-    padding: none;
+    padding: none; */
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
 }
 
 img {
