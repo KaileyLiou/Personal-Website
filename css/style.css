@@ -92,7 +92,7 @@ ul.nav-bar {
     margin: 0;
     padding: 10px 15px;
     background-color: #FAF9F6;
-    gap: 15px;
+    gap: 10px;
 }
 
 li.nav-tab {
@@ -104,8 +104,8 @@ li.nav-tab {
 li.nav-tab a {
     color: #3d716c;
     font-size: 17px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
