@@ -90,7 +90,7 @@ ul.nav-bar {
     align-items: center;
     list-style: none;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #FAF9F6;
     gap: 15px;
 }
@@ -115,7 +115,6 @@ li.nav-tab a {
 li.nav-tab a:hover {
     background-color: #3d716c;
     color: #FAF9F6;
-    text-decoration-style: wavy;
 }
 
 .navbar-github {
