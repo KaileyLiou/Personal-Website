@@ -103,7 +103,7 @@ li.nav-tab a {
   font-size: 17px;
   padding-left: 15px;
   padding-right: 15px;
-  text-decoration-style: wavy;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -111,6 +111,16 @@ li.nav-tab a {
 li.nav-tab a:hover {
   background-color: #3d716c;
   color: #FAF9F6;
+  text-decoration-style: wavy;
+}
+
+.navbar-github {
+    float:right;
+    width: 30px;
+    margin: 0;
+    margin-right: 2%;
+    border: 0px;
+    padding: none;
 }
 
 img {
@@ -145,15 +155,6 @@ img {
     margin-bottom: 2em;
     margin-left: 25%;
     margin-right: 25%;
-}
-
-.navbar-github {
-    float:right;
-    width: 30px;
-    margin: 0;
-    margin-right: 2%;
-    border: 0px;
-    padding: none;
 }
 
 .footer {
