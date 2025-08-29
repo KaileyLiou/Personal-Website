@@ -129,6 +129,7 @@ li.nav-tab a:hover {
   height: 30px;
   object-fit: contain;
   display: block;
+  border: 0px;
 }
 
 img {
