@@ -54,11 +54,16 @@ header {
 }
 
 
-h1 {
+/* h1 {
     color: #3d716c;
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 45px;
+} */
+
+h1, h2 {
+    color: #FAFAFA;
+    padding-bottom: 20px;
 }
 
 h2 {
