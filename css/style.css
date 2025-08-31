@@ -124,10 +124,10 @@ img {
 }
 
 .home-text {
-    color: #a1c1bd;
-    font-size: 25px;
+    color: #9bb9b6;
+    /* font-size: 25px; */
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     text-align: center;
 }
 
