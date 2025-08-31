@@ -47,23 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   animateCount("coding-hours", 20);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleButton = document.getElementById("theme-toggle");
-  const themeIcon = document.getElementById("theme-icon");
-
-  if (toggleButton && themeIcon) {
-    toggleButton.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-
-      if (document.body.classList.contains("dark-mode")) {
-        themeIcon.src = "assets/moon.svg";
-      } else {
-        themeIcon.src = "assets/sun.svg";
-      }
-    });
-  }
-});
-
 function changeColor() {
     const title = document.getElementById("projects-title");
     title.style.color = "hotpink";
