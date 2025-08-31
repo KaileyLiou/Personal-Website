@@ -124,7 +124,7 @@ img {
 }
 
 .home-text {
-    color: #3d716c;
+    color: #a1c1bd;
     font-size: 25px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -224,7 +224,7 @@ img {
 }
 
 .grid-item:hover {
-    background-color: #3d716c;
+    background-color: #a1c1bd;
     color: #FAFAFA;
 }
 
