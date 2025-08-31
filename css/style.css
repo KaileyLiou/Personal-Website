@@ -140,6 +140,7 @@ img {
     margin: 0;
     border: 0;
     height: auto; 
+    text-align: center;
 }
 
 .footer-text {
@@ -147,6 +148,7 @@ img {
     padding-top: 2px;
     padding-bottom: 2px;
     font-size: 20px;
+    text-align: center;
 }
 
 ::selection {
