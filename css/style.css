@@ -197,8 +197,9 @@ img {
 }
 
 .grid-title {
-    color: #a1c1bd;
+    color: #73a29d;
     margin-top: 2em;
+    align-items: center;
 }
 
 .grid-container {
@@ -226,6 +227,10 @@ img {
 .grid-item:hover {
     background-color: #a1c1bd;
     color: #FAFAFA;
+}
+
+.subtitle {
+    text-align: center;
 }
 
 #coding-time {
