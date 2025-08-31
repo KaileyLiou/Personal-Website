@@ -125,6 +125,10 @@ img {
 
 .home-text {
     color: #3d716c;
+    font-size: 25px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
 }
 
 .portfolio-description {
