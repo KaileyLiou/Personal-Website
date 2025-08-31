@@ -236,7 +236,7 @@ img {
 
 .footer {
     background-color: #c5e2df;
-    padding: 10px; 
+    padding: 5px; 
     margin: 0;
     border: 0;
     height: auto; 
@@ -245,8 +245,8 @@ img {
 
 .footer-text {
     color: #3d716c;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     font-size: 15px;
     text-align: center;
 }
