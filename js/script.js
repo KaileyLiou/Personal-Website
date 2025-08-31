@@ -30,7 +30,7 @@ function animateCount(id, end) {
 const observer = new IntersectionObserver((items, observer) => {
   items.forEach(item => {
     if (item.isIntersecting) {
-      animateCount("coding-hours", 25); 
+      animateCount("coding-hours", 20); 
       observer.unobserve(item.target); 
     }
   });
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  animateCount("coding-hours", 25);
+  animateCount("coding-hours", 20);
 });
 
 // function changeColor() {
