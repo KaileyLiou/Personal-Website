@@ -30,7 +30,7 @@ function animateCount(id, end) {
 const observer = new IntersectionObserver((items, observer) => {
   items.forEach(item => {
     if (item.isIntersecting) {
-      animateCount("coding-hours", 20); 
+      animateCount("coding-hours", 25); 
       observer.unobserve(item.target); 
     }
   });
@@ -44,39 +44,39 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  animateCount("coding-hours", 20);
+  animateCount("coding-hours", 25);
 });
 
-function changeColor() {
-    const title = document.getElementById("projects-title");
-    title.style.color = "hotpink";
-}
+// function changeColor() {
+//     const title = document.getElementById("projects-title");
+//     title.style.color = "hotpink";
+// }
 
-function changeTextColor() {
-    const text = document.getElementById("portfolio-text");
-    text.style.color = "blue";
-}
+// function changeTextColor() {
+//     const text = document.getElementById("portfolio-text");
+//     text.style.color = "blue";
+// }
 
-function changeText() {
-  const text = document.getElementById("hover-text");
-  text.textContent = "This website!";
-}
+// function changeText() {
+//   const text = document.getElementById("hover-text");
+//   text.textContent = "This website!";
+// }
 
-function resetText() {
-  const text = document.getElementById("hover-text");
-  text.textContent = "Personal Website";
-}
+// function resetText() {
+//   const text = document.getElementById("hover-text");
+//   text.textContent = "Personal Website";
+// }
 
-function changeTextSize() {
-  const subtext = document.getElementById("portoflio-subtext");
-  if (subtext.style.fontSize === "20px") {
-    subtext.style.fontSize = "16px";
-  } else {
-    subtext.style.fontSize = "20px";
-  }
-}
+// function changeTextSize() {
+//   const subtext = document.getElementById("portoflio-subtext");
+//   if (subtext.style.fontSize === "20px") {
+//     subtext.style.fontSize = "16px";
+//   } else {
+//     subtext.style.fontSize = "20px";
+//   }
+// }
 
-function addUnderline() {
-  const subtext = document.getElementById("portfolio-subtext2");
-  subtext.style.textDecoration = "underline";
-}
+// function addUnderline() {
+//   const subtext = document.getElementById("portfolio-subtext2");
+//   subtext.style.textDecoration = "underline";
+// }
