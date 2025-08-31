@@ -197,9 +197,9 @@ img {
 }
 
 .grid-title {
-    color: #73a29d;
+    color: #85afab;
     margin-top: 2em;
-    align-items: center;
+    text-align: center;
 }
 
 .grid-container {
