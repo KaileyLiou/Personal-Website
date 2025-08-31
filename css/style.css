@@ -12,15 +12,15 @@ body {
 }
 
 main {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 17%;
+    padding-right: 17%;
 }
 
 header {
     padding-top: 50px;
     padding-bottom: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 17%;
+    padding-right: 17%;
     margin: 1px;
 }
 
@@ -49,6 +49,7 @@ p {
     margin-top: 2em;
     margin-bottom: 2em;
     font-size: 20px;
+    line-height: 1.5;
 }
 
 nav {
@@ -207,7 +208,7 @@ img {
 }
 
 .grid-title {
-    color: #254b47;
+    color: #83bab5;
     margin-top: 2em;
 }
 
