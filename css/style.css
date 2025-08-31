@@ -149,12 +149,12 @@ img {
     flex-wrap: wrap;     
     justify-content: center;
     gap: 1.5em;  
-    padding: 1em;   
+    padding: 1em;
+    align-items: center;
 }
 
 .flex-item {
-    flex-basis: 100%;
-    margin: 0.75em;
+    margin: 0.75em auto;
     flex: 1 1 250px;
     max-width: 300px;
     height: auto;
@@ -180,6 +180,10 @@ img {
     flex-direction: column;
     align-items: center;
   }
+
+  .flex-item {
+    max-width: 90%;
+  }
 }
 
 .portfolio-img {
@@ -197,7 +201,7 @@ img {
 }
 
 .grid-title {
-    color: #85afab;
+    color: #8aa8a5;
     margin-top: 2em;
     text-align: center;
 }
