@@ -31,14 +31,14 @@ h1 {
 }
 
 h2 {
-    color: #3d716c;
+    color: #FAFAFA;
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 30px;
 }
 
 h3 {
-    color: white;
+    color: #FAFAFA;
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 25px;
@@ -207,7 +207,7 @@ img {
 }
 
 .grid-title {
-    color: #3d716c;
+    color: #FAFAFA;
     margin-top: 2em;
 }
 
@@ -216,9 +216,11 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1em;
     margin: 2em 10%;
-    background-color: #3d716c;
+    background-color: #3d5171;
     padding: 1em;
     border-radius: 10px;
+    justify-items: center;
+    align-items: center;
 }
 
 .grid-item {
@@ -227,6 +229,12 @@ img {
     padding: 1em;
     border-radius: 10px;
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.grid-item:hover {
+    background-color: #3d716c;
+    color: #FAFAFA;
 }
 
 #coding-time {
