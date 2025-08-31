@@ -5,14 +5,14 @@ var Typed = new Typed(".typed-text", {
     loop: true
 });
 
-function toggleCaption() {
-  const caption = document.getElementById("meals-caption");
-  if (caption.style.display === "none") {
-    caption.style.display = "block";
-  } else {
-    caption.style.display = "none";
-  }
-}
+// function toggleCaption() {
+//   const caption = document.getElementById("meals-caption");
+//   if (caption.style.display === "none") {
+//     caption.style.display = "block";
+//   } else {
+//     caption.style.display = "none";
+//   }
+// }
 
 function animateCount(id, end) {
   let num = 0;
