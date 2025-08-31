@@ -207,7 +207,7 @@ img {
 }
 
 .grid-title {
-    color: #FAFAFA;
+    color: #c5e2df;
     margin-top: 2em;
 }
 
@@ -216,7 +216,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1em;
     margin: 2em 10%;
-    background-color: #3d5171;
+    background-color: #3d716c;
     padding: 1em;
     border-radius: 10px;
     justify-items: center;
