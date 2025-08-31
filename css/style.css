@@ -134,23 +134,6 @@ img {
     margin-right: 25%;
 }
 
-.footer {
-    background-color: #c5e2df;
-    padding: 10px; 
-    margin: 0;
-    border: 0;
-    height: auto; 
-    text-align: center;
-}
-
-.footer-text {
-    color: #3d716c;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-size: 20px;
-    text-align: center;
-}
-
 ::selection {
     background: #c5e2df;
     color: #3d716c;
@@ -245,4 +228,21 @@ img {
     color: #3d716c;
     font-size: 20px;
     margin-top: 2em;
+}
+
+.footer {
+    background-color: #c5e2df;
+    padding: 10px; 
+    margin: 0;
+    border: 0;
+    height: auto; 
+    text-align: center;
+}
+
+.footer-text {
+    color: #3d716c;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 15px;
+    text-align: center;
 }
