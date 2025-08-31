@@ -128,6 +128,7 @@ img {
 .project-title {
     color: #FAFAFA;
     font-weight: normal;
+    font-size: 22px;
 }
 
 .home-text {
@@ -160,6 +161,24 @@ img {
 }
 
 .flex-item {
+    margin: 0.75em auto;
+    flex: 1 1 250px;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+.flext-item2 {
+    margin: 0.75em auto;
+    flex: 1 1 250px;
+    /* max-width: 300px;
+    height: auto; */
+    max-height: 200px;
+    width: auto;
+    text-align: center;
+}
+
+.flex-item3 {
     margin: 0.75em auto;
     flex: 1 1 250px;
     max-width: 300px;
