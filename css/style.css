@@ -231,8 +231,6 @@ img {
 #coding-time {
     color: #3d716c;
     font-size: 20px;
-    padding-top: 1px;
-    padding-bottom: 1px;
 }
 
 .footer {
@@ -246,7 +244,6 @@ img {
 
 .footer-text {
     color: #3d716c;
-    padding-bottom: 1px;
     font-size: 15px;
     text-align: center;
 }
