@@ -176,6 +176,11 @@ img {
     cursor: pointer;
 }
 
+.flex-item p {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
 @media screen and (max-width: 850px) {
   .flex-container {
     flex-wrap: wrap;
