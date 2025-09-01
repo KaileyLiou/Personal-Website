@@ -223,10 +223,10 @@ img {
     transition: transform 0.3s ease;
 }
 
-.flex-item2 img:hover, .flex-item3 img:hover {
+/* .flex-item2 img:hover, .flex-item3 img:hover {
     transform: scale(1.05);
     cursor: pointer;
-}
+} */
 
 .flex-item2 p, .flex-item3 p, .flex-item3 h3.project-title {
     color: #FAFAFA;
@@ -318,7 +318,7 @@ img {
 
 .footer {
     background-color: #c5e2df;
-    padding: 0px; 
+    padding: 1px; 
     margin: 0;
     border: 0;
     height: auto; 
