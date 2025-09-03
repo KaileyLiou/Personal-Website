@@ -1,6 +1,6 @@
 # Personal Website
 
-This project is my personal website highlighting my hobbies, skills, and some of my projects (designs, photography, and coding).
+This project is my personal website highlighting my hobbies, skills, and some of my projects (designs and coding).
 
 I decided to make a website to allow me to keep all my projects in one space and have something to continue to add on to in the future. I plan on eventually including more pages and adding more extensions.
 
