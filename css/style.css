@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: #c5e2df;
+    color: #3d716c;
+}
+
 body {
     font-family: 'Onest', 'Lucida Sans Unicode', sans-serif;
     background-color: #3d716c;
@@ -103,18 +108,7 @@ li.nav-tab a:hover {
     margin: 0;
 }
 
-/* images and cards */
-
-img {
-    max-height: 250px;
-    max-width: 400px;
-    border-radius: 15%;
-    border: 3px solid white;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
+/* portfolio page images */
 
 .portfolio-img {
     /* border-radius: 5%;
@@ -145,9 +139,9 @@ img {
 
 .project-title {
     color: #FAFAFA;
-    font-weight: normal;
-    font-size: 20px;
-    margin: 0 0 0.5em;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 0.75em 0 0.25em;
 }
 
 .home-text {
@@ -158,18 +152,10 @@ img {
 }
 
 .project-description {
-    /* margin-top: 0em;
-    margin-bottom: 2em;
-    margin-left: 25%;
-    margin-right: 25%; */
-    font-size: 15px;
-    color: #f1f1f1;
+    color: #e6e6e6;
+    font-size: 0.95em;
     margin-bottom: 1em;
-}
-
-::selection {
-    background: #c5e2df;
-    color: #3d716c;
+    line-height: 1.4;
 }
 
 .flex-container {
@@ -218,7 +204,7 @@ img {
     height: auto;
     text-align: center;
     background-color: #9bb9b6;
-    padding: 0;
+    padding: 1em;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -235,21 +221,24 @@ img {
 
 .button-group {
     display: flex;
-    justify-content: space-between;
-    gap: 0.5em;
+    flex-direction: column;
+    gap: 0.75em;
+    width: 100%;
+    margin-top: 1em;
 }
 
 .portfolio-button {
     background-color: #FAFAFA;
     color: #333;
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.75em 1em;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    flex: 1;
+    width: 100%;
     text-align: center;
+    font-size: 1em;
 }
 
 .portfolio-button:hover {
@@ -275,6 +264,19 @@ img {
     margin: 0.5em 0;
 }
 
+/* images and text on home page */
+
+img {
+    max-height: 250px;
+    max-width: 400px;
+    border-radius: 15%;
+    border: 3px solid white;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 .flex-item img {
     display: block;
     margin: 0 auto; 
@@ -285,21 +287,10 @@ img {
     transition: transform 0.3s ease; 
 }
 
-/* .flex-item img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 15%;
-  border: 3px solid white;
-  margin: 0.5em auto;
-} */
-
-/* .flex-item img:hover {
+.flex-item img:hover {
     transform: scale(1.05);
     cursor: pointer;
-} */
+}
 
 .flex-item p {
     margin-top: 0.5em;
