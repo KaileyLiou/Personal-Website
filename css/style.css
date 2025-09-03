@@ -211,12 +211,19 @@ li.nav-tab a:hover {
     overflow: hidden;
 }
 
+.card-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .card-img img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 0;
     display: block;
+    border: none;
 }
 
 .card-content {
