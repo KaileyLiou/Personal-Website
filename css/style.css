@@ -263,7 +263,7 @@ li.nav-tab a:hover {
 .portfolio-button:hover {
     background-color: #e0e0e0;
 }
-
+/* 
 .flex-item2 img, .flex-item3 img {
     border-radius: 0;
     border: none;
@@ -271,7 +271,7 @@ li.nav-tab a:hover {
     height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
+} */
 
 /* .flex-item2 img:hover, .flex-item3 img:hover {
     transform: scale(1.05);
