@@ -224,6 +224,8 @@ li.nav-tab a:hover {
     border-radius: 0;
     display: block;
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .card-content {
@@ -263,8 +265,8 @@ li.nav-tab a:hover {
 .portfolio-button:hover {
     background-color: #e0e0e0;
 }
-/* 
-.flex-item2 img, .flex-item3 img {
+
+/* .flex-item2 img, .flex-item3 img {
     border-radius: 0;
     border: none;
     width: 100%;
@@ -286,6 +288,12 @@ li.nav-tab a:hover {
 /* images and text on home page */
 
 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hobby-img {
     max-height: 250px;
     max-width: 400px;
     border-radius: 15%;
