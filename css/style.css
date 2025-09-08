@@ -331,21 +331,30 @@ img {
 @media screen and (max-width: 850px) {
   .flex-container {
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .flex-item {
     max-width: 90%;
+    flex: 1 1 90%;
   }
 
   .flex-item2 {
     max-width: 90%;
+    flex: 1 1 90%;
   }
 
   .flex-item3 {
     max-width: 90%;
+    flex: 1 1 90%;
   }
+
+  .card-img img {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
 }
 
 /* grid */
