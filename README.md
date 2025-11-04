@@ -9,3 +9,5 @@ To make this website, I used HTML, CSS, and JavaScript. I coded it on VS Code an
 While coding, I had to re-learn the basics of web development, as I hadn’t built a website in a few years. However, I was able to learn many new concepts, including classes and IDs in CSS to change up the style of my images/text.
 
 View my project here: https://kaileyliou.github.io/Personal-Website/
+
+<img width="1694" height="889" alt="Personal Website" src="https://github.com/user-attachments/assets/bed7e29d-939d-4381-afa1-2f4916054913" />
