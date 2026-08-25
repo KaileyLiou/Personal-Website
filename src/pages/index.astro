@@ -1,17 +1,65 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Kailey Liou">
+  <nav>
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">Kailey Liou</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="container">
+    <h1>Hero section — typing text goes here</h1>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About</h2>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+  </section>
+
+  <style>
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--color-cream);
+      border-bottom: 1px solid rgba(22, 40, 58, 0.1);
+      z-index: 10;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: var(--space-sm);
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: var(--space-md);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
+      min-height: 60vh;
+      padding-block: var(--space-xl);
+    }
+  </style>
+</Layout>
