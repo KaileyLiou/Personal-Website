@@ -19,24 +19,23 @@ import Layout from '../layouts/Layout.astro';
   </nav>
 
   <section id="welcome" class="container welcome">
-    <h1>
-      <span class="lead-in">hi, i'm</span>
-      Kailey Liou
-    </h1>
+    <h1>Kailey Liou</h1>
 
     <p class="tagline">
       I'm <span id="typing-word" class="typing-word"></span><span class="cursor">|</span>
     </p>
 
-    <p class="hero-bio">
-      I'm a high school senior in New York City with a strong interest in computer science and STEM.
-    </p>
-
     <a href="#projects" class="cta">See my projects ↓</a>
   </section>
 
-  <section id="about" class="container">
-    <h2>About</h2>
+  <section id="about" class="about-band">
+    <div class="container about-inner">
+      <p>
+        I am a high school senior in New York City with a strong interest in computer science and STEM,
+		especially cybersecurity and AI/ML. In my free time, I enjoy coding, organizing hackathons, tutoring,
+		running, and graphic designing.
+      </p>
+    </div>
   </section>
 
   <section id="projects" class="container">
@@ -127,18 +126,28 @@ import Layout from '../layouts/Layout.astro';
       50% { opacity: 0; }
     }
 
-    .welcome-bio {
-      max-width: 42ch;
-      color: var(--color-ink);
-      opacity: 0.85;
-    }
-
     .cta {
       margin-inline: auto;
     }
 
     .cta:hover {
       background: var(--color-blue-dark);
+    }
+
+	.about-band {
+      background: var(--color-blue);
+      color: var(--color-cream);
+    }
+
+    .about-inner {
+      max-width: 700px;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .about-inner p {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      line-height: 1.6;
     }
   </style>
 
@@ -182,10 +191,11 @@ import Layout from '../layouts/Layout.astro';
       new TypingEffect(wordEl, [
         'a coder.',
 		'a hackathon organizer.',
+		'a peer tutor.',
         'a graphic designer.',
         'a runner.',
+		'a racewalker.',
         'a pianist.',
-		'a peer tutor.',
       ]);
     }
   </script>
