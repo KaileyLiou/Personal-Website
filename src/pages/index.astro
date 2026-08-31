@@ -57,14 +57,16 @@ const projects: Project[] = [
     </div>
   </nav>
 
-  <section id="welcome" class="container welcome">
-    <h1>Kailey Liou</h1>
+  <section id="welcome" class="welcome">
+    <div class="container welcome-inner">
+      <h1>Kailey Liou</h1>
 
-    <p class="tagline">
-      I'm <span id="typing-word" class="typing-word"></span><span class="cursor">|</span>
-    </p>
+      <p class="tagline">
+        I'm <span id="typing-word" class="typing-word"></span><span class="cursor">|</span>
+      </p>
 
-    <a href="#projects" class="cta">See my projects ↓</a>
+      <a href="#projects" class="cta">See my projects ↓</a>
+    </div>
   </section>
 
   <section id="about" class="about-band">
@@ -149,16 +151,21 @@ const projects: Project[] = [
       padding-block: var(--space-xl);
     }
 
-    .welcome {
+	.welcome {
+      min-height: 55vh;
+      background-image: radial-gradient(circle, rgba(29, 111, 143, 0.25) 1.3px, transparent 1px);
+      background-size: 24px 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    .welcome-inner {
       display: flex;
       flex-direction: column;
-      align-items: left;
+      align-items: flex-start;
       text-align: left;
-      justify-content: left;
       gap: var(--space-sm);
-      min-height: 50vh;
-	  background-image: radial-gradient(circle, rgba(29, 111, 143, 0.12) 1.5px, transparent 1.5px);
-	  background-size: 24px 24px;
+      width: 100%;
     }
 
     .typing {
