@@ -16,7 +16,7 @@ const projects: Project[] = [
     description: "A health reminder app that helps people stay on top of vaccines and cancer screenings.",
     link: "https://apps.apple.com/us/app/screens-shots/id6755749446",
     githubLink: "https://github.com/KaileyLiou/Screens-Shots",
-	image: "/projects/screens_shots.png",
+	image: "/projects/screens_shots2.png",
   },
   {
     title: "σ Orionis DBNets Analysis",
@@ -34,7 +34,7 @@ const projects: Project[] = [
   },
   {
     title: "Sprig Maze",
-    description: "A 14-level maze game built on Hack Club's Sprig hardware, where the goal is to get the green pea to the boba.",
+    description: "A 14-level maze game built on Hack Club's Sprig hardware where the goal is to get the green pea to the boba.",
     link: "https://sprig.hackclub.com/share/3AWmEEVINE324649XdZ6",
     githubLink: "https://github.com/KaileyLiou/sprig-maze",
 	image: "/projects/sprig.jpg",
@@ -87,9 +87,7 @@ const projects: Project[] = [
       {projects.map((project) => (
         <article class="project-card">
           <a href={project.link} target="_blank" rel="noopener noreferrer" class="project-image-link">
-            <div class="project-image-placeholder">
-              {project.title.charAt(0)}
-            </div>
+            <img src={project.image} alt={`screenshot of ${project.title}`} class="project-image" loading="lazy"/>
           </a>
 
           <div class="project-card-body">
@@ -259,15 +257,11 @@ const projects: Project[] = [
       display: block;
     }
 
-    .project-image-placeholder {
+    .project-image {
       aspect-ratio: 16 / 10;
-      background: var(--color-blue);
-      color: var(--color-cream);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-display);
-      font-size: 2.5rem;
+      width: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .project-card-body {
