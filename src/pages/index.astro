@@ -39,6 +39,20 @@ const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/sprig-maze",
 	image: "/projects/sprig.jpg",
   },
+  {
+    title: "Sprig Maze",
+    description: "A 14-level maze game built on Hack Club's Sprig hardware where the goal is to get the green pea to the boba.",
+    link: "https://sprig.hackclub.com/share/3AWmEEVINE324649XdZ6",
+    githubLink: "https://github.com/KaileyLiou/sprig-maze",
+	image: "/projects/sprig.jpg",
+  },
+  {
+    title: "Sprig Maze",
+    description: "A 14-level maze game built on Hack Club's Sprig hardware where the goal is to get the green pea to the boba.",
+    link: "https://sprig.hackclub.com/share/3AWmEEVINE324649XdZ6",
+    githubLink: "https://github.com/KaileyLiou/sprig-maze",
+	image: "/projects/sprig.jpg",
+  },
 ];
 ---
 
@@ -80,8 +94,10 @@ const projects: Project[] = [
     </div>
   </section>
 
-  <section id="projects" class="container">
-    <h2>Projects</h2>
+  <section id="projects">
+  	<div class="container">
+    	<h2>Projects</h2>
+	</div>
 
     <div class="carousel">
       <div class="carousel-track" id="carousel-track">
@@ -248,7 +264,9 @@ const projects: Project[] = [
       scroll-behavior: smooth;
       scroll-snap-type: x mandatory;
       padding-bottom: var(--space-sm);
+      padding-inline: var(--space-sm);
       scrollbar-width: none; /* hides the scrollbar in firefox */
+	  justify-content: center;
     }
 
     .carousel-track::-webkit-scrollbar {
@@ -256,7 +274,7 @@ const projects: Project[] = [
     }
 
     .carousel-track .project-card {
-      flex: 0 0 clamp(240px, 30vw, 320px);
+      flex: 0 0 clamp(260px, 32vw, 340px);
       scroll-snap-align: start;
     }
 
@@ -384,10 +402,10 @@ const projects: Project[] = [
 
         let delay = this.deleting ? 40 : 80;
 
-        if (!this.deleting && this.charIndex === currentWord.length) {
+        if(!this.deleting && this.charIndex === currentWord.length) {
           delay = 1400;
           this.deleting = true;
-        } else if (this.deleting && this.charIndex === 0) {
+        } else if(this.deleting && this.charIndex === 0) {
           this.deleting = false;
           this.wordIndex = (this.wordIndex + 1) % this.words.length;
           delay = 300;
@@ -398,7 +416,7 @@ const projects: Project[] = [
     }
 
     const wordEl = document.querySelector<HTMLElement>('#typing-word');
-    if (wordEl) {
+    if(wordEl) {
       new TypingEffect(wordEl, [
         'a coder.',
 		'a hackathon organizer.',
@@ -408,6 +426,108 @@ const projects: Project[] = [
 		'a racewalker.',
         'a pianist.',
       ]);
+    }
+
+	class Carousel {
+      private track: HTMLElement;
+      private prevBtn: HTMLButtonElement;
+      private nextBtn: HTMLButtonElement;
+      private pauseBtn: HTMLButtonElement;
+      private isPaused = false;
+      private rafId: number | null = null;
+      private speed = 0.6;
+
+      constructor(track: HTMLElement, prevBtn: HTMLButtonElement, nextBtn: HTMLButtonElement, pauseBtn: HTMLButtonElement) {
+        this.track = track;
+        this.prevBtn = prevBtn;
+        this.nextBtn = nextBtn;
+        this.pauseBtn = pauseBtn;
+        this.bindEvents();
+        this.play();
+      }
+
+      private bindEvents() {
+        this.track.addEventListener('mouseenter', () => this.stop());
+        this.track.addEventListener('mouseleave', () => {
+          if(!this.isPaused) {
+			this.play();
+		  }
+        });
+
+        this.pauseBtn.addEventListener('click', () => this.togglePause());
+        this.prevBtn.addEventListener('click', () => this.step(-1));
+        this.nextBtn.addEventListener('click', () => this.step(1));
+        document.addEventListener('visibilitychange', () => {
+          if(document.hidden) {
+			this.stop();
+		  }
+          else if(!this.isPaused) {
+			this.play();
+		  }
+        });
+      }
+
+      private play() {
+        if(this.rafId !== null) {
+			return;
+		}
+
+        const tick = () => {
+          this.track.scrollLeft += this.speed;
+          const maxScroll = this.track.scrollWidth - this.track.clientWidth;
+
+          if(this.track.scrollLeft >= maxScroll) {
+            this.track.scrollLeft = 0; // to snap back to the start 
+          }
+          this.rafId = requestAnimationFrame(tick);
+        };
+        this.rafId = requestAnimationFrame(tick);
+      }
+
+      private stop() {
+        if(this.rafId !== null) {
+          cancelAnimationFrame(this.rafId);
+          this.rafId = null;
+        }
+      }
+
+      private togglePause() {
+        this.isPaused = !this.isPaused;
+        if(this.isPaused) {
+          this.stop();
+          this.pauseBtn.textContent = '▶';
+          this.pauseBtn.setAttribute('aria-label', 'Play carousel');
+        }
+		else {
+          this.play();
+          this.pauseBtn.textContent = '⏸';
+          this.pauseBtn.setAttribute('aria-label', 'Pause carousel');
+        }
+      }
+
+      private step(direction: 1 | -1) {
+        this.isPaused = true;
+        this.stop();
+        this.pauseBtn.textContent = '▶';
+        this.pauseBtn.setAttribute('aria-label', 'Play carousel');
+
+        const card = this.track.querySelector<HTMLElement>('.project-card');
+        if(!card) {
+			return;
+		}
+        const gap = parseFloat(getComputedStyle(this.track).gap || '0');
+        const distance = card.getBoundingClientRect().width + gap;
+        this.track.scrollBy({ left: direction * distance, behavior: 'smooth' });
+      }
+    }
+
+    const track = document.querySelector<HTMLElement>('#carousel-track');
+    const prevBtn = document.querySelector<HTMLButtonElement>('#carousel-prev');
+    const nextBtn = document.querySelector<HTMLButtonElement>('#carousel-next');
+    const pauseBtn = document.querySelector<HTMLButtonElement>('#carousel-pause');
+
+    if(track && prevBtn && nextBtn && pauseBtn) {
+      new Carousel(track, prevBtn, nextBtn, pauseBtn);
     }
   </script>
 
