@@ -430,12 +430,13 @@ const projects: Project[] = [
       ]);
     }
 
-	class Carousel {
+    class Carousel {
       private track: HTMLElement;
       private prevBtn: HTMLButtonElement;
       private nextBtn: HTMLButtonElement;
       private pauseBtn: HTMLButtonElement;
       private isPaused = false;
+      private isVisible = false;
       private rafId: number | null = null;
       private speed = 0.6;
 
@@ -445,25 +446,41 @@ const projects: Project[] = [
         this.nextBtn = nextBtn;
         this.pauseBtn = pauseBtn;
         this.bindEvents();
-        this.play();
+        this.observeVisibility();
+      }
+
+      private observeVisibility() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            this.isVisible = entries[0].isIntersecting;
+            if(this.isVisible && !this.isPaused) {
+				this.play();
+			}
+            else {
+				this.stop();
+			}
+          },
+          { threshold: 0.3 } // considered visible when 30% is on screen
+        );
+        observer.observe(this.track);
       }
 
       private bindEvents() {
         this.track.addEventListener('mouseenter', () => this.stop());
         this.track.addEventListener('mouseleave', () => {
-          if(!this.isPaused) {
+          if(!this.isPaused && this.isVisible) {
 			this.play();
 		  }
         });
-
         this.pauseBtn.addEventListener('click', () => this.togglePause());
         this.prevBtn.addEventListener('click', () => this.step(-1));
         this.nextBtn.addEventListener('click', () => this.step(1));
+
         document.addEventListener('visibilitychange', () => {
           if(document.hidden) {
 			this.stop();
 		  }
-          else if(!this.isPaused) {
+          else if(!this.isPaused && this.isVisible) {
 			this.play();
 		  }
         });
@@ -473,14 +490,14 @@ const projects: Project[] = [
         if(this.rafId !== null) {
 			return;
 		}
-
         const tick = () => {
           this.track.scrollLeft += this.speed;
           const maxScroll = this.track.scrollWidth - this.track.clientWidth;
 
           if(this.track.scrollLeft >= maxScroll) {
-            this.track.scrollLeft = 0; // to snap back to the start 
+            this.track.scrollLeft = 0;
           }
+
           this.rafId = requestAnimationFrame(tick);
         };
         this.rafId = requestAnimationFrame(tick);
@@ -499,9 +516,11 @@ const projects: Project[] = [
           this.stop();
           this.pauseBtn.textContent = '▶';
           this.pauseBtn.setAttribute('aria-label', 'Play carousel');
-        }
+        } 
 		else {
-          this.play();
+          if(this.isVisible) {
+			this.play();
+		  }
           this.pauseBtn.textContent = '⏸';
           this.pauseBtn.setAttribute('aria-label', 'Pause carousel');
         }
@@ -513,15 +532,16 @@ const projects: Project[] = [
         this.pauseBtn.textContent = '▶';
         this.pauseBtn.setAttribute('aria-label', 'Play carousel');
 
-        const card = this.track.querySelector<HTMLElement>('.project-card');
+		const card = this.track.querySelector<HTMLElement>('.project-card');
         if(!card) {
 			return;
 		}
+
         const gap = parseFloat(getComputedStyle(this.track).gap || '0');
         const distance = card.getBoundingClientRect().width + gap;
         this.track.scrollBy({ left: direction * distance, behavior: 'smooth' });
       }
-    }
+	}
 
     const track = document.querySelector<HTMLElement>('#carousel-track');
     const prevBtn = document.querySelector<HTMLButtonElement>('#carousel-prev');
@@ -530,6 +550,9 @@ const projects: Project[] = [
 
     if(track && prevBtn && nextBtn && pauseBtn) {
       new Carousel(track, prevBtn, nextBtn, pauseBtn);
+    } 
+	else {
+      console.error('Carousel: one or more elements not found', { track, prevBtn, nextBtn, pauseBtn }); // debugging
     }
   </script>
 
