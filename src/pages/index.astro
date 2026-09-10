@@ -263,12 +263,16 @@ const projects: Project[] = [
       gap: var(--space-md);
       overflow-x: auto;
       scroll-behavior: smooth;
-      scroll-snap-type: x mandatory;
+      scroll-snap-type: none;
       padding-bottom: var(--space-sm);
       padding-inline: var(--space-sm);
       scrollbar-width: none;
       mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
       -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+    }
+
+    .carousel-track.snap-enabled {
+      scroll-snap-type: x mandatory;
     }
 
     .carousel-track::-webkit-scrollbar {
@@ -438,7 +442,7 @@ const projects: Project[] = [
       private isPaused = false;
       private isVisible = false;
       private rafId: number | null = null;
-      private speed = 0.6;
+      private speed = 3;
 
       constructor(track: HTMLElement, prevBtn: HTMLButtonElement, nextBtn: HTMLButtonElement, pauseBtn: HTMLButtonElement) {
         this.track = track;
@@ -487,9 +491,11 @@ const projects: Project[] = [
       }
 
       private play() {
+        this.track.classList.remove('snap-enabled');
         if(this.rafId !== null) {
-			return;
-		}
+          return;
+        }
+
         const tick = () => {
           this.track.scrollLeft += this.speed;
           const maxScroll = this.track.scrollWidth - this.track.clientWidth;
@@ -497,7 +503,6 @@ const projects: Project[] = [
           if(this.track.scrollLeft >= maxScroll) {
             this.track.scrollLeft = 0;
           }
-
           this.rafId = requestAnimationFrame(tick);
         };
         this.rafId = requestAnimationFrame(tick);
@@ -514,13 +519,14 @@ const projects: Project[] = [
         this.isPaused = !this.isPaused;
         if(this.isPaused) {
           this.stop();
+          this.track.classList.add('snap-enabled');
           this.pauseBtn.textContent = '▶';
           this.pauseBtn.setAttribute('aria-label', 'Play carousel');
-        } 
-		else {
+        }
+        else {
           if(this.isVisible) {
-			this.play();
-		  }
+            this.play();
+          }
           this.pauseBtn.textContent = '⏸';
           this.pauseBtn.setAttribute('aria-label', 'Pause carousel');
         }
@@ -529,13 +535,14 @@ const projects: Project[] = [
       private step(direction: 1 | -1) {
         this.isPaused = true;
         this.stop();
+        this.track.classList.add('snap-enabled');
         this.pauseBtn.textContent = '▶';
         this.pauseBtn.setAttribute('aria-label', 'Play carousel');
 
-		const card = this.track.querySelector<HTMLElement>('.project-card');
+        const card = this.track.querySelector<HTMLElement>('.project-card');
         if(!card) {
-			return;
-		}
+          return;
+        }
 
         const gap = parseFloat(getComputedStyle(this.track).gap || '0');
         const distance = card.getBoundingClientRect().width + gap;
