@@ -9,11 +9,13 @@ interface Props {
 }
 
 const { title, description, link, githubLink, image, isDuplicate } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const imageSrc = `${base}${image}`;
 ---
 
 <article class="project-card" aria-hidden={isDuplicate ? "true" : undefined}>
   <a href={link} target="_blank" rel="noopener noreferrer" class="project-image-link" tabindex={isDuplicate ? -1 : undefined}>
-    <img src={image} alt={`Screenshot of ${title}`} class="project-image" loading="lazy" />
+    <img src={imageSrc} alt={`Screenshot of ${title}`} class="project-image" loading="lazy" />
   </a>
   <div class="project-card-body">
     <h3>{title}</h3>
