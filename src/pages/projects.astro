@@ -7,7 +7,7 @@ import { projects } from '../data/projects';
 const tags = [...new Set(projects.map((p) => p.tag))];
 ---
 
-<Layout title="All projects">
+<Layout title="Kailey Liou">
   <Nav />
   <main>
     <div class="container">
@@ -15,7 +15,7 @@ const tags = [...new Set(projects.map((p) => p.tag))];
       <h1>All projects</h1>
 
       <div class="filters">
-        <button class="filter" data-tag="all" aria-pressed="true">All</button>
+        <button class="filter" data-tag="all" aria-pressed="true">all</button>
         {tags.map((tag) => (
           <button class="filter" data-tag={tag} aria-pressed="false">{tag}</button>
         ))}
