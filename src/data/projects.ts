@@ -25,6 +25,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/PacMac",
     image: "/projects/pacmac.png",
     tag: "games",
+    featured: true,
   },
   {
     title: "Crazy Asteroids",
@@ -49,6 +50,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Lab-2-Cupcake-Collector",
     image: "/projects/cupcakecollector.png",
     tag: "games",
+    featured: true,
   },
   {
     title: "σ Orionis DBNets Analysis",
@@ -82,6 +84,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/femaidens/2026-Rebuilt",
     image: "/projects/femaidens.png",
     tag: "engineering",
+    featured: true,
   },
   {
     title: "Stuck in a Loop",
@@ -106,6 +109,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/BWSI-Portfolio-Website",
     image: "/projects/bwsiportfolio.png",
     tag: "web",
+    featured: true,
   },
   {
     title: "Applied Engineering, AI & Future Technologies",
@@ -114,6 +118,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Applied-Engineering-AI-Future-Technologies",
     image: "/projects/appliedengineering.png",
     tag: "engineering",
+    featured: true,
   },
   {
     title: "Pusheen Photo Gallery",
@@ -146,6 +151,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Christmas-PCB",
     image: "/projects/christmaspcb.png",
     tag: "engineering",
+    featured: true,
   },
   {
     title: "Gingerbread Clicker Game",
@@ -391,6 +397,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Personality-Quiz",
     image: "/projects/personality-quiz.png",
     tag: "web",
+    featured: true,
   },
   {
     title: "AP CSA Picture Lab",
@@ -407,6 +414,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Medlytics-Fall",
     image: "/projects/medlytics.png",
     tag: "data",
+    featured: true,
   },
   {
     title: "Arduino Car",
