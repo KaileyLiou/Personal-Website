@@ -4,7 +4,9 @@ import ProjectCard from '../components/ProjectCard.astro';
 import Nav from '../components/Nav.astro';
 import { projects } from '../data/projects';
 
-const featured = projects.filter((p) => p.featured);
+const featured = projects
+  .filter((p) => p.featured)
+  .sort((a, b) => (a.featuredOrder ?? 999) - (b.featuredOrder ?? 999));
 
 const carouselItems = [
   ...featured.map((p) => ({ ...p, isDuplicate: false })),
@@ -160,7 +162,6 @@ const carouselItems = [
       justify-content: safe center;
       gap: var(--space-md);
       overflow-x: auto;
-      scroll-behavior: smooth;
       scroll-snap-type: none;
       padding-bottom: var(--space-sm);
       padding-inline: var(--space-sm);
@@ -264,6 +265,7 @@ const carouselItems = [
       private isVisible = false;
       private rafId: number | null = null;
       private speed = 3;
+      private resumeTimer: number | undefined;
 
       constructor(track: HTMLElement, prevBtn: HTMLButtonElement, nextBtn: HTMLButtonElement, pauseBtn: HTMLButtonElement) {
         this.track = track;
@@ -356,20 +358,30 @@ const carouselItems = [
       }
 
       private step(direction: 1 | -1) {
-        this.isPaused = true;
-        this.stop();
-        this.track.classList.add('snap-enabled');
-        this.pauseBtn.textContent = '▶';
-        this.pauseBtn.setAttribute('aria-label', 'Play carousel');
-
         const card = this.track.querySelector<HTMLElement>('.project-card');
         if(!card) {
           return;
         }
 
+        const wasPaused = this.isPaused;
+        this.stop(); // stop autoplay briefly so it doesn't fight the glide
+
+        if(wasPaused) {
+          this.track.classList.add('snap-enabled');
+        }
+
         const gap = parseFloat(getComputedStyle(this.track).gap || '0');
         const distance = card.getBoundingClientRect().width + gap;
         this.track.scrollBy({ left: direction * distance, behavior: 'smooth' });
+
+        if(!wasPaused) {
+          clearTimeout(this.resumeTimer);
+          this.resumeTimer = window.setTimeout(() => {
+            if(!this.isPaused && this.isVisible) {
+              this.play();
+            }
+          }, 600);
+        }
       }
 	}
 

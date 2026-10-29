@@ -6,6 +6,7 @@ export interface Project {
   image: string;
   tag: string; // apps, data, cybersecurity, web, games, engineering, CAD, other
   featured?: boolean; // shows in carousel
+  featuredOrder?: number;
 }
 
 export const projects: Project[] = [
@@ -17,6 +18,7 @@ export const projects: Project[] = [
     image: "/projects/screens_shots.png",
     tag: "apps",
     featured: true,
+    featuredOrder: 3,
   },
   {
     title: "PacMac",
@@ -26,6 +28,7 @@ export const projects: Project[] = [
     image: "/projects/pacmac.png",
     tag: "games",
     featured: true,
+    featuredOrder: 1,
   },
   {
     title: "Crazy Asteroids",
@@ -51,6 +54,7 @@ export const projects: Project[] = [
     image: "/projects/cupcakecollector.png",
     tag: "games",
     featured: true,
+    featuredOrder: 13,
   },
   {
     title: "σ Orionis DBNets Analysis",
@@ -60,6 +64,7 @@ export const projects: Project[] = [
     image: "/projects/sigma_orionis.png",
     tag: "data",
     featured: true,
+    featuredOrder: 4,
   },
   {
     title: "Girls Who Code Data Science + AI Track",
@@ -85,6 +90,7 @@ export const projects: Project[] = [
     image: "/projects/femaidens.png",
     tag: "engineering",
     featured: true,
+    featuredOrder: 6,
   },
   {
     title: "Stuck in a Loop",
@@ -110,6 +116,7 @@ export const projects: Project[] = [
     image: "/projects/bwsiportfolio.png",
     tag: "web",
     featured: true,
+    featuredOrder: 7,
   },
   {
     title: "Applied Engineering, AI & Future Technologies",
@@ -119,6 +126,7 @@ export const projects: Project[] = [
     image: "/projects/appliedengineering.png",
     tag: "engineering",
     featured: true,
+    featuredOrder: 10,
   },
   {
     title: "Pusheen Photo Gallery",
@@ -152,6 +160,7 @@ export const projects: Project[] = [
     image: "/projects/christmaspcb.png",
     tag: "engineering",
     featured: true,
+    featuredOrder: 14,
   },
   {
     title: "Gingerbread Clicker Game",
@@ -169,6 +178,7 @@ export const projects: Project[] = [
     image: "/projects/pigeon.png",
     tag: "games",
     featured: true,
+    featuredOrder: 3,
   },
   {
     title: "Personal Website v1",
@@ -178,6 +188,7 @@ export const projects: Project[] = [
     image: "/projects/website.png",
     tag: "web",
     featured: true,
+    featuredOrder: 12,
   },
   {
     title: "Food Waste Website",
@@ -187,6 +198,7 @@ export const projects: Project[] = [
     image: "/projects/foodwaste.png",
     tag: "web",
     featured: true,
+    featuredOrder: 9,
   },
   {
     title: "Birthday Countdown Website",
@@ -204,6 +216,7 @@ export const projects: Project[] = [
     image: "/projects/turtles.png",
     tag: "web",
     featured: true,
+    featuredOrder: 15,
   },
   {
     title: "Journal App",
@@ -373,6 +386,7 @@ export const projects: Project[] = [
     image: "/projects/sprig.jpg",
     tag: "games",
     featured: true,
+    featuredOrder: 5,
   },
   {
     title: "Broadway Shows",
@@ -398,6 +412,7 @@ export const projects: Project[] = [
     image: "/projects/personality-quiz.png",
     tag: "web",
     featured: true,
+    featuredOrder: 11,
   },
   {
     title: "AP CSA Picture Lab",
@@ -415,6 +430,7 @@ export const projects: Project[] = [
     image: "/projects/medlytics.png",
     tag: "data",
     featured: true,
+    featuredOrder: 8,
   },
   {
     title: "Arduino Car",
