@@ -178,7 +178,7 @@ export const projects: Project[] = [
     title: "Personal Website v1",
     description: "My original portfolio site, built with HTML, CSS, and JavaScript.",
     link: "https://kaileyliou.com/v1/",
-    githubLink: "https://github.com/KaileyLiou/Personal-Website/tree/old-website-v1",
+    githubLink: "https://kaileyliou.com/v1/",
     image: "/projects/website.png",
     tag: "web",
     featured: true,
