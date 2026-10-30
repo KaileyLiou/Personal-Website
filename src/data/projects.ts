@@ -54,7 +54,7 @@ export const projects: Project[] = [
     image: "/projects/cupcakecollector.png",
     tag: "games",
     featured: true,
-    featuredOrder: 13,
+    featuredOrder: 12,
   },
   {
     title: "σ Orionis DBNets Analysis",
@@ -115,8 +115,6 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/BWSI-Portfolio-Website",
     image: "/projects/bwsiportfolio.png",
     tag: "web",
-    featured: true,
-    featuredOrder: 7,
   },
   {
     title: "Applied Engineering, AI & Future Technologies",
@@ -125,8 +123,6 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Applied-Engineering-AI-Future-Technologies",
     image: "/projects/appliedengineering.png",
     tag: "engineering",
-    featured: true,
-    featuredOrder: 10,
   },
   {
     title: "Pusheen Photo Gallery",
@@ -159,8 +155,6 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Christmas-PCB",
     image: "/projects/christmaspcb.png",
     tag: "engineering",
-    featured: true,
-    featuredOrder: 14,
   },
   {
     title: "Gingerbread Clicker Game",
@@ -178,7 +172,7 @@ export const projects: Project[] = [
     image: "/projects/pigeon.png",
     tag: "games",
     featured: true,
-    featuredOrder: 3,
+    featuredOrder: 5,
   },
   {
     title: "Personal Website v1",
@@ -188,7 +182,7 @@ export const projects: Project[] = [
     image: "/projects/website.png",
     tag: "web",
     featured: true,
-    featuredOrder: 12,
+    featuredOrder: 2,
   },
   {
     title: "Food Waste Website",
@@ -216,7 +210,7 @@ export const projects: Project[] = [
     image: "/projects/turtles.png",
     tag: "web",
     featured: true,
-    featuredOrder: 15,
+    featuredOrder: 11,
   },
   {
     title: "Journal App",
@@ -386,7 +380,7 @@ export const projects: Project[] = [
     image: "/projects/sprig.jpg",
     tag: "games",
     featured: true,
-    featuredOrder: 5,
+    featuredOrder: 7,
   },
   {
     title: "Broadway Shows",
@@ -412,7 +406,7 @@ export const projects: Project[] = [
     image: "/projects/personality-quiz.png",
     tag: "web",
     featured: true,
-    featuredOrder: 11,
+    featuredOrder: 10,
   },
   {
     title: "AP CSA Picture Lab",
@@ -461,7 +455,7 @@ export const projects: Project[] = [
     description: "A laser-cut hospital building with red windows, designed in TinkerCAD.",
     link: "https://www.tinkercad.com/things/akTegGmIQEG-engineering-laser-cutting-1/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=JF56Orv1MQ7K24PmN6U5HtKFeUIVLM0fe2HiZQkM2_E",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
-    image: "/projects/hospital.jpg",
+    image: "/projects/hospital.png",
     tag: "engineering",
   },
   {
