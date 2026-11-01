@@ -6,8 +6,9 @@ I included a project carousel with buttons to play/pause and to speed it up. The
 
 My v1 personal website, built with HTML/CSS/JS, can be viewed here: https://kaileyliou.com/v1/
 
-I decided to create a new website since my old was was pretty simple and was outdated. There were some issues with images not loading, responsiveness only working on certain devices, and cards overlapping. I kept most of the elements and just changed it to be more clean.
+I decided to create a new website since my old one was pretty simple and was outdated. There were some issues with images not loading, responsiveness only working on certain devices, and cards overlapping. I kept most of the elements and just changed it to be more clean.
 
 <img width="1674" height="868" alt="Screenshot 2026-10-29 at 2 22 21 AM" src="https://github.com/user-attachments/assets/80251954-21e4-4280-98ef-8ebb8a6f249f" />
 <img width="1636" height="757" alt="Screenshot 2026-10-29 at 8 26 29 AM" src="https://github.com/user-attachments/assets/f9490651-ae7a-4638-8d35-fc85b3029f60" />
 <img width="1694" height="750" alt="Screenshot 2026-10-29 at 8 26 16 AM" src="https://github.com/user-attachments/assets/a8b01a2f-42e8-4733-a7ad-0d713777ac00" />
+<img width="1694" height="889" alt="509329809-bed7e29d-939d-4381-afa1-2f4916054913" src="https://github.com/user-attachments/assets/6e4f45c4-d454-4a64-bb00-9c6c069947c6" />
