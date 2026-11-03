@@ -469,7 +469,7 @@ export const projects: Project[] = [
   {
     title: "Kumamon",
     description: "A 3D TinkerCAD model of Kumamon, the black bear Japanese mascot.",
-    link: "https://www.tinkercad.com/things/dRZfANXvGUV-engineering-kumamon/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=oQWffqIoaz7oxVKIB8uabPcRPZ5kfwhthycxTHIuQTU",
+    link: "https://www.tinkercad.com/things/dAvzFebRr8h-engineering-kumamon?sharecode=eWzqQCuLWtBVvi9RG2MxW03SJC4QQiYGnE3ntByp2lw",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/kumamon.png",
     tag: "CAD",
@@ -477,7 +477,7 @@ export const projects: Project[] = [
   {
     title: "Bridge",
     description: "A TinkerCAD bridge design used to construct a physical bridge that was a top finisher in a contest.",
-    link: "https://www.tinkercad.com/things/05qE1oGdMMn-engineering-bridge/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=ci9zwHy15pgDXEhMm5y_a6TwYskCN3muoyzrOhnZ-7s",
+    link: "https://www.tinkercad.com/things/iKt4Dj4dl8E-engineering-bridge?sharecode=Liu-Ma_1DUnkpFzTf0fZz5Sr3tGSbd8dpYvHmctdBwg",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/bridge.png",
     tag: "CAD",
@@ -525,7 +525,7 @@ export const projects: Project[] = [
   {
     title: "Backpacks",
     description: "Three JanSport backpacks modeled in TinkerCAD.",
-    link: "https://www.tinkercad.com/things/fPhgX2UN3xg-backpack/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=t8JEvogneN1aJliOJz4s_ZkMCWogltQD8YRY4Hi8Bzg",
+    link: "https://www.tinkercad.com/things/4YjLi2X9J1Y-backpack?sharecode=HT0ysY80XxTSBlL5WPJ7sBXOMmyx4KtkZ2rgknb_dv8",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/backpacks.png",
     tag: "CAD",
@@ -533,7 +533,7 @@ export const projects: Project[] = [
   {
     title: "Dominoes",
     description: "A TinkerCAD domino simulation with a blue ball and a red ramp.",
-    link: "https://www.tinkercad.com/things/cHS1rrgPN2C-dominos/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=Xo_BjebKMJAofMZTLF5XM4CiGomp4h_lFtcx0lFAAYA",
+    link: "https://www.tinkercad.com/things/hJHZMA8v0tJ-dominos?sharecode=XZ0fHOZF9hMKkqaAQU0VhvU8jIQzJ6Iq9X-s_lJFKic",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/dominos.png",
     tag: "CAD",
@@ -541,7 +541,7 @@ export const projects: Project[] = [
   {
     title: "Interior Design",
     description: "A 3D TinkerCAD interior design of a house.",
-    link: "https://www.tinkercad.com/things/4q6H5ivZfMc-interior-design/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=Fts914SA_6XeRz1FrFsjxeUMF3ly-LqRQLgpxXKgVWM",
+    link: "https://www.tinkercad.com/things/cRgxPIX4GmP-interior-design?sharecode=-GxCtAMprneCO8Xpfa0ZZ1g42IJucslHBOYvgF3H27w",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/interior.png",
     tag: "CAD",
@@ -549,7 +549,7 @@ export const projects: Project[] = [
   {
     title: "Fidget Spinners",
     description: "Fidget spinners designed in TinkerCAD.",
-    link: "https://www.tinkercad.com/things/6UGr4yqTFsN-fidget-spinners/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=EerJOvw7y2eKxK7AkKrn1ZkpRG6jIoV9DouavquynEs",
+    link: "https://www.tinkercad.com/things/24qoO3TzzSI-fidget-spinners?sharecode=KvxDa2gDtCgt-zRCMl1deWrGvbE0F3504_FQnmc5QSk",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/fidget.png",
     tag: "CAD",
@@ -557,7 +557,7 @@ export const projects: Project[] = [
   {
     title: "Gingerbread House",
     description: "A gingerbread house designed in TinkerCAD.",
-    link: "https://www.tinkercad.com/things/65p3iIhN6Wu-gingerbread-house/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=kqM5xJ1ywSWgmSuXcHknHoSV8dVrjO_uw5mmdGKnws0",
+    link: "https://www.tinkercad.com/things/3zDTIveJ6VJ-gingerbread-house?sharecode=VQJHa2VWB3JRfXt03WzHcF_Y7VzHcttpBHQjhtexzHk",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/gingerbread.png",
     tag: "CAD",
