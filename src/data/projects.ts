@@ -18,7 +18,7 @@ export const projects: Project[] = [
     image: "/projects/screens_shots.png",
     tag: "apps",
     featured: true,
-    featuredOrder: 3,
+    featuredOrder: 1,
   },
   {
     title: "PacMac",
@@ -27,8 +27,6 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/PacMac",
     image: "/projects/pacmac.png",
     tag: "games",
-    featured: true,
-    featuredOrder: 1,
   },
   {
     title: "Crazy Asteroids",
@@ -53,8 +51,6 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Lab-2-Cupcake-Collector",
     image: "/projects/cupcakecollector.png",
     tag: "games",
-    featured: true,
-    featuredOrder: 12,
   },
   {
     title: "σ Orionis DBNets Analysis",
@@ -64,7 +60,7 @@ export const projects: Project[] = [
     image: "/projects/sigma_orionis.png",
     tag: "data",
     featured: true,
-    featuredOrder: 4,
+    featuredOrder: 2,
   },
   {
     title: "Girls Who Code Data Science + AI Track",
@@ -90,7 +86,7 @@ export const projects: Project[] = [
     image: "/projects/femaidens.png",
     tag: "engineering",
     featured: true,
-    featuredOrder: 6,
+    featuredOrder: 3,
   },
   {
     title: "Stuck in a Loop",
@@ -172,7 +168,7 @@ export const projects: Project[] = [
     image: "/projects/pigeon.png",
     tag: "games",
     featured: true,
-    featuredOrder: 5,
+    featuredOrder: 4,
   },
   {
     title: "Personal Website v1",
@@ -182,7 +178,7 @@ export const projects: Project[] = [
     image: "/projects/website.png",
     tag: "web",
     featured: true,
-    featuredOrder: 2,
+    featuredOrder: 5,
   },
   {
     title: "Food Waste Website",
@@ -192,7 +188,7 @@ export const projects: Project[] = [
     image: "/projects/foodwaste.png",
     tag: "web",
     featured: true,
-    featuredOrder: 9,
+    featuredOrder: 6,
   },
   {
     title: "Birthday Countdown Website",
@@ -209,8 +205,6 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Turtles",
     image: "/projects/turtles.png",
     tag: "web",
-    featured: true,
-    featuredOrder: 11,
   },
   {
     title: "Journal App",
@@ -406,7 +400,7 @@ export const projects: Project[] = [
     image: "/projects/personality-quiz.png",
     tag: "web",
     featured: true,
-    featuredOrder: 10,
+    featuredOrder: 8,
   },
   {
     title: "AP CSA Picture Lab",
@@ -423,21 +417,19 @@ export const projects: Project[] = [
     githubLink: "https://github.com/KaileyLiou/Medlytics-Fall",
     image: "/projects/medlytics.png",
     tag: "data",
-    featured: true,
-    featuredOrder: 8,
   },
   {
     title: "Arduino Car",
     description: "An Arduino car built with wires, a breadboard, motors, and sensors.",
-    link: "https://www.tinkercad.com/login?next=%2Fthings%2FcOIt9M653zA-engineering-circuits%2Feditel%3FreturnTo%3Dhttps%253A%252F%252Fwww.tinkercad.com%252Fdashboard%252Fdesigns%252Fcircuits%26sharecode%3DQm1OsdXKxY2pbyTjK6KaeNImxtUddaDpN6pGdW3v6H0",
-    githubLink: "https://www.tinkercad.com/login?next=%2Fthings%2FcOIt9M653zA-engineering-circuits%2Feditel%3FreturnTo%3Dhttps%253A%252F%252Fwww.tinkercad.com%252Fdashboard%252Fdesigns%252Fcircuits%26sharecode%3DQm1OsdXKxY2pbyTjK6KaeNImxtUddaDpN6pGdW3v6H0",
+    link: "https://drive.google.com/file/d/1-_XfuNCGN8Yw7-vZlR8D4VjQADMht1fl/view?usp=sharing",
+    githubLink: "https://github.com/KaileyLiou/Arduino-Car",
     image: "/projects/arduino.jpg",
     tag: "engineering",
   },
   {
     title: "Circuits",
     description: "Arduino boards and batteries wired to breadboards with LEDs.",
-    link: "https://www.tinkercad.com/things/cOIt9M653zA-engineering-circuits/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fall",
+    link: "https://www.tinkercad.com/things/khsAXcDQ0zF-engineering-circuits",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/circuits.png",
     tag: "engineering",
@@ -453,7 +445,7 @@ export const projects: Project[] = [
   {
     title: "Hospital",
     description: "A laser-cut hospital building with red windows, designed in TinkerCAD.",
-    link: "https://www.tinkercad.com/things/akTegGmIQEG-engineering-laser-cutting-1/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=JF56Orv1MQ7K24PmN6U5HtKFeUIVLM0fe2HiZQkM2_E",
+    link: "https://www.tinkercad.com/things/kRzRmpOZRqL-engineering-laser-cutting-1",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/hospital.png",
     tag: "engineering",
@@ -461,7 +453,7 @@ export const projects: Project[] = [
   {
     title: "City",
     description: "A TinkerCAD city with houses, shops, a river, a city square, and solar panels.",
-    link: "https://www.tinkercad.com/things/cBotybzm48R-engineering-city/edit?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2F3d&sharecode=CbhMftYF-nQ4AzRG2f1vQhYttdHddtH3njuc_epDnUU",
+    link: "https://www.tinkercad.com/things/eR6KTlxhpBz-engineering-city",
     githubLink: "https://github.com/KaileyLiou/Tinkercad-Projects",
     image: "/projects/city.png",
     tag: "CAD",
